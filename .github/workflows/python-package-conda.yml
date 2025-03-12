@@ -32,3 +32,15 @@ jobs:
       run: |
         conda install pytest
         pytest
+name: openmanus
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pip:
+    - requests
+    - flask
